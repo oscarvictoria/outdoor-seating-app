@@ -15,6 +15,7 @@
 		BEE1A3C3250ACD1800EB3D86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEE1A3C2250ACD1800EB3D86 /* Assets.xcassets */; };
 		BEE1A3C6250ACD1800EB3D86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEE1A3C4250ACD1800EB3D86 /* LaunchScreen.storyboard */; };
 		BEE1A3D0250ACE6400EB3D86 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE1A3CF250ACE6400EB3D86 /* Keychain.swift */; };
+		BEE1A3D3250AD07200EB3D86 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BEE1A3D2250AD07200EB3D86 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		BEE1A3C5250ACD1800EB3D86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BEE1A3C7250ACD1800EB3D86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEE1A3CF250ACE6400EB3D86 /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		BEE1A3D2250AD07200EB3D86 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FECC4160A2A6FECE69CD3245 /* Pods-Outdoor-Seating-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Outdoor-Seating-App.release.xcconfig"; path = "Target Support Files/Pods-Outdoor-Seating-App/Pods-Outdoor-Seating-App.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +89,7 @@
 				BEE1A3CD250ACE2400EB3D86 /* Supporting Files */,
 				BEE1A3BF250ACD1400EB3D86 /* Main.storyboard */,
 				BEE1A3C7250ACD1800EB3D86 /* Info.plist */,
+				BEE1A3D2250AD07200EB3D86 /* GoogleService-Info.plist */,
 			);
 			path = "Outdoor-Seating-App";
 			sourceTree = "<group>";
@@ -129,6 +132,7 @@
 				BEE1A3B2250ACD1400EB3D86 /* Sources */,
 				BEE1A3B3250ACD1400EB3D86 /* Frameworks */,
 				BEE1A3B4250ACD1400EB3D86 /* Resources */,
+				021393E4A97DF25F6A874D81 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -178,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEE1A3C6250ACD1800EB3D86 /* LaunchScreen.storyboard in Resources */,
+				BEE1A3D3250AD07200EB3D86 /* GoogleService-Info.plist in Resources */,
 				BEE1A3C3250ACD1800EB3D86 /* Assets.xcassets in Resources */,
 				BEE1A3C1250ACD1400EB3D86 /* Main.storyboard in Resources */,
 			);
@@ -186,6 +191,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		021393E4A97DF25F6A874D81 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Outdoor-Seating-App/Pods-Outdoor-Seating-App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Outdoor-Seating-App/Pods-Outdoor-Seating-App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Outdoor-Seating-App/Pods-Outdoor-Seating-App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7BF4C43F8D29B65ED13054D3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
