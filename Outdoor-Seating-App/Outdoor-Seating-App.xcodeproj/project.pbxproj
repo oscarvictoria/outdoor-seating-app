@@ -14,6 +14,7 @@
 		BEE1A3C1250ACD1400EB3D86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEE1A3BF250ACD1400EB3D86 /* Main.storyboard */; };
 		BEE1A3C3250ACD1800EB3D86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEE1A3C2250ACD1800EB3D86 /* Assets.xcassets */; };
 		BEE1A3C6250ACD1800EB3D86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEE1A3C4250ACD1800EB3D86 /* LaunchScreen.storyboard */; };
+		BEE1A3D0250ACE6400EB3D86 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE1A3CF250ACE6400EB3D86 /* Keychain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		BEE1A3C2250ACD1800EB3D86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BEE1A3C5250ACD1800EB3D86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BEE1A3C7250ACD1800EB3D86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEE1A3CF250ACE6400EB3D86 /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
 		FECC4160A2A6FECE69CD3245 /* Pods-Outdoor-Seating-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Outdoor-Seating-App.release.xcconfig"; path = "Target Support Files/Pods-Outdoor-Seating-App/Pods-Outdoor-Seating-App.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -48,7 +50,6 @@
 				6F0207588DB2BCFF99B099C5 /* Pods-Outdoor-Seating-App.debug.xcconfig */,
 				FECC4160A2A6FECE69CD3245 /* Pods-Outdoor-Seating-App.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,15 +82,40 @@
 		BEE1A3B8250ACD1400EB3D86 /* Outdoor-Seating-App */ = {
 			isa = PBXGroup;
 			children = (
-				BEE1A3B9250ACD1400EB3D86 /* AppDelegate.swift */,
-				BEE1A3BB250ACD1400EB3D86 /* SceneDelegate.swift */,
-				BEE1A3BD250ACD1400EB3D86 /* ViewController.swift */,
+				BEE1A3D1250ACE6C00EB3D86 /* Controllers */,
+				BEE1A3CE250ACE4D00EB3D86 /* Secrets */,
+				BEE1A3CD250ACE2400EB3D86 /* Supporting Files */,
 				BEE1A3BF250ACD1400EB3D86 /* Main.storyboard */,
-				BEE1A3C2250ACD1800EB3D86 /* Assets.xcassets */,
-				BEE1A3C4250ACD1800EB3D86 /* LaunchScreen.storyboard */,
 				BEE1A3C7250ACD1800EB3D86 /* Info.plist */,
 			);
 			path = "Outdoor-Seating-App";
+			sourceTree = "<group>";
+		};
+		BEE1A3CD250ACE2400EB3D86 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BEE1A3C4250ACD1800EB3D86 /* LaunchScreen.storyboard */,
+				BEE1A3C2250ACD1800EB3D86 /* Assets.xcassets */,
+				BEE1A3BB250ACD1400EB3D86 /* SceneDelegate.swift */,
+				BEE1A3B9250ACD1400EB3D86 /* AppDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BEE1A3CE250ACE4D00EB3D86 /* Secrets */ = {
+			isa = PBXGroup;
+			children = (
+				BEE1A3CF250ACE6400EB3D86 /* Keychain.swift */,
+			);
+			path = Secrets;
+			sourceTree = "<group>";
+		};
+		BEE1A3D1250ACE6C00EB3D86 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BEE1A3BD250ACD1400EB3D86 /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEE1A3BE250ACD1400EB3D86 /* ViewController.swift in Sources */,
+				BEE1A3D0250ACE6400EB3D86 /* Keychain.swift in Sources */,
 				BEE1A3BA250ACD1400EB3D86 /* AppDelegate.swift in Sources */,
 				BEE1A3BC250ACD1400EB3D86 /* SceneDelegate.swift in Sources */,
 			);
