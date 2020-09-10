@@ -88,3 +88,12 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+
+# ignores ds store
+.DS_Store
+
+# ignores google info plist
+GoogleService-Info.plist
+
+# ignores secrets folder 
+Secrets/
